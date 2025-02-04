@@ -21,3 +21,8 @@ def scrape(request):
         data = Link.objects.all()
 
         return render(request, 'soup/result.html', {'data': data})
+    
+
+def clear(request):
+    Link.objects.all().delete()
+    return render(request, 'soup/result.html')
