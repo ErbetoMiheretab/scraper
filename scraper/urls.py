@@ -21,6 +21,6 @@ from soup import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.scrape, name="scrape"),
-    path('clear/',views.scrape, name="clear"),
+    path('clear/',views.clear, name="clear"),
 
 ]
